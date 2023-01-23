@@ -98,7 +98,7 @@
 <script language="javascript">
     function show_date_time() {
         window.setTimeout("show_date_time()", 1000);
-        BirthDay = new Date("01/24/2000 08:00:00");//这个日期是可以修改的
+        BirthDay = new Date("01/24/2000 08:00:00");
         today = new Date();
         timeold = (today.getTime() - BirthDay.getTime());
         sectimeold = timeold / 1000
@@ -120,7 +120,6 @@
         init: function () {
             S.Drawing.init('.canvas');
             document.body.classList.add('body--ready');
-            //想说的话
             S.UI.simulate("Sherry|生日快乐哟|#countdown 3|#rectangle 15x15|#circle 12 |#time");
             S.Drawing.loop(function () {
                 S.Shape.render();
@@ -574,9 +573,5 @@
     }());
     S.init();
 </script>
-<!--//音乐可改-->
-<audio autoplay="autoplay" loop="loop">
-    <source src="http://m10.music.126.net/20180509183512/5ae461e9a42675d782840bf139b05c60/ymusic/e492/ea7a/6a27/8799d19e52d9bbe3ae15febb03d7efdb.mp3" type="audio/mpeg">
-</audio>
 </body>
 </html>
