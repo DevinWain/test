@@ -104,7 +104,8 @@ section {
 }
 
 body {
-  line-height: 1
+  line-height: 1;
+  zoom: 3;
 }
 
 ol,
